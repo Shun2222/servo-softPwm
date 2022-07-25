@@ -18,6 +18,7 @@ int main()
           std::cout << "cannot setup gpio." << std::endl;
           return 1;
       }
+      int pin = 8;
       int pulseRange = 1920;
       int pulseWidth; 
       pinMode(pin, PWM_OUTPUT);
