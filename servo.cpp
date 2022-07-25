@@ -22,7 +22,7 @@ int main()
       int pulseWidth; 
       pinMode(pin, PWM_OUTPUT);
       softPwmCreate(pin, 0, pulseRange);
-      angle = 0.1;
+      double angle = 0.1;
       while (true) {
           std::cin >> angle;
           if (angle == -1) {
