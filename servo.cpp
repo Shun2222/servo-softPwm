@@ -25,6 +25,7 @@ int main()
       softPwmCreate(pin, 0, pulseRange);
       double angle = 0.1;
       while (true) {
+	  std::cout << "angle:" <<std::endl;
           std::cin >> angle;
           if (angle == -1) {
               break;
