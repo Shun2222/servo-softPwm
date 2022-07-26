@@ -1,0 +1,2 @@
+#!/bin/bash
+g++ soft_servo.cpp softServo.c softServo.h -lwiringPi -pthread -lrt -lcrypt
