@@ -3,12 +3,12 @@
 #include <softPwm.h>
 
 
-int getPulseWidth(double angle)
+double getPulseWidth(double angle)
 {    
     if(angle>1.0) angle = 1.0;
     else if(angle<0.0) angle = 0.0;
-    int maxValue = 27;
-    int minValue = 8;
+    double maxValue = 2.0;
+    double minValue = 1.0;
     return minValue + angle * (maxValue - minValue);
 }
 
@@ -19,7 +19,7 @@ int main()
           return 1;
       }
       int pin = 8;
-      int pulseRange = 1920;
+      int pulseRange = 20;
       int pulseWidth; 
       pinMode(pin, PWM_OUTPUT);
       softPwmCreate(pin, 0, pulseRange);

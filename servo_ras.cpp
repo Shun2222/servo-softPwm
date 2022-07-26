@@ -3,6 +3,8 @@
 #include <iostream>
 #include <string>
 
+// 動かないサイトからもってきた
+
 using namespace std;
 
 float computePalseWidth(int angle) {
